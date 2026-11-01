@@ -4,8 +4,8 @@
 
 Nothing here should be assumed to work until checked.
 
-- **Real sound hardware.** Automated audio runs through PJSIP's null device with WAV source and recorder. Microphone capture, speaker playback, AEC3, ringtone output, and the Settings microphone and speaker tests have not run on real devices.
-- **Answering in the app.** Answer was exercised by the integration agent, not by clicking it in the app, and the microphone permission prompt has not been seen in the app.
+- **Real sound hardware, beyond one echo call.** One outgoing call to the PBX echo extension was confirmed by ear on one Mac with the default devices, including the microphone permission prompt. Echo cancellation on open speakers, ringtone output, and the Settings microphone and speaker tests have not been checked.
+- **Answering in the app.** Answer was exercised by the integration agent, not by clicking it in the app.
 - **Bluetooth, AirPods, USB switching, and unplugging a device during a call.**
 - **Wi-Fi loss, VPN changes and sleep/wake.** Recovery was tested with a PBX restart only.
 - **DNS SRV, DNS failure, outbound proxies on a live server, STUN, ICE, TURN and IPv6.** Code paths exist; none ran against a server.
