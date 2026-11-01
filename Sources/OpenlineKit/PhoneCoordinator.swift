@@ -219,8 +219,16 @@ public protocol MicrophoneAccess: Sendable {
 
     private func loadIntoEngine(_ account: SIPAccount) async {
         guard isRunning else { return }
-        guard let password = try? credentials.password(for: account.credentialReference) else {
-            registration[account.id] = .failed(.incorrectCredentials)
+        let password: String
+        do {
+            guard let stored = try credentials.password(for: account.credentialReference) else {
+                registration[account.id] = .failed(.credentialUnavailable)
+                return
+            }
+            password = stored
+        } catch {
+            lastRegistrationResponse[account.id] = error.localizedDescription
+            registration[account.id] = .failed(.credentialUnavailable)
             return
         }
         let turn = try? credentials.password(for: turnReference(account))

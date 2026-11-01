@@ -1,0 +1,772 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%@" : {
+
+    },
+    "%@ – %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ – %2$@"
+          }
+        }
+      }
+    },
+    "%@: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@: %2$@"
+          }
+        }
+      }
+    },
+    "%lld added, %lld duplicates skipped, %lld invalid rows skipped." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld added, %2$lld duplicates skipped, %3$lld invalid rows skipped."
+          }
+        }
+      }
+    },
+    "%lld ms" : {
+
+    },
+    "%lld of %lld accounts registered" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld of %2$lld accounts registered"
+          }
+        }
+      }
+    },
+    "About" : {
+
+    },
+    "Account" : {
+
+    },
+    "Account Name" : {
+
+    },
+    "Accounts" : {
+
+    },
+    "Add Account…" : {
+
+    },
+    "Add Contact" : {
+
+    },
+    "Add Number" : {
+
+    },
+    "Add SIP Account" : {
+
+    },
+    "Add and enable a SIP account to place calls." : {
+
+    },
+    "Add to Contacts" : {
+
+    },
+    "Add to Favorites" : {
+
+    },
+    "Advanced" : {
+
+    },
+    "All" : {
+
+    },
+    "Answer" : {
+
+    },
+    "Answered" : {
+
+    },
+    "Any" : {
+
+    },
+    "Appearance" : {
+
+    },
+    "Audio" : {
+
+    },
+    "Audio devices" : {
+
+    },
+    "Authentication Username" : {
+
+    },
+    "Authentication failed" : {
+
+    },
+    "Automatic" : {
+
+    },
+    "Blind Transfer" : {
+
+    },
+    "Busy" : {
+
+    },
+    "Call" : {
+
+    },
+    "Call %@" : {
+
+    },
+    "Call Back" : {
+
+    },
+    "Call connected" : {
+
+    },
+    "Call ended" : {
+
+    },
+    "Call failed" : {
+
+    },
+    "Call on hold" : {
+
+    },
+    "Call updating" : {
+
+    },
+    "Calling…" : {
+
+    },
+    "Calls" : {
+
+    },
+    "Calls you make and receive appear here." : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Cancelled" : {
+
+    },
+    "Chime" : {
+
+    },
+    "Classic" : {
+
+    },
+    "Clear" : {
+
+    },
+    "Clear History" : {
+
+    },
+    "Clear all call history?" : {
+
+    },
+    "Codec" : {
+
+    },
+    "Codecs" : {
+
+    },
+    "Company" : {
+
+    },
+    "Configure Later" : {
+
+    },
+    "Connect your SIP account and start calling." : {
+
+    },
+    "Connected" : {
+
+    },
+    "Connecting…" : {
+
+    },
+    "Contacts" : {
+
+    },
+    "Contacts are stored only on this Mac." : {
+
+    },
+    "Copy Number" : {
+
+    },
+    "DTMF" : {
+
+    },
+    "Dark" : {
+
+    },
+    "Decline" : {
+
+    },
+    "Declined" : {
+
+    },
+    "Default" : {
+
+    },
+    "Default Outgoing Account" : {
+
+    },
+    "Delete" : {
+
+    },
+    "Delete last character" : {
+
+    },
+    "Detailed SIP Logging" : {
+
+    },
+    "Diagnostics" : {
+
+    },
+    "Dial target" : {
+
+    },
+    "Disabled" : {
+
+    },
+    "Dismiss" : {
+
+    },
+    "Do Not Disturb" : {
+
+    },
+    "Drag to set the order. Applies to all accounts, from the next call." : {
+
+    },
+    "Edit" : {
+
+    },
+    "Enabled" : {
+
+    },
+    "End Call and Quit" : {
+
+    },
+    "End the current call and quit?" : {
+
+    },
+    "Ending…" : {
+
+    },
+    "Enter a number, extension or SIP address." : {
+
+    },
+    "Enter a port between 1 and 65535." : {
+
+    },
+    "Enter a valid host name or address." : {
+
+    },
+    "Enter the account password." : {
+
+    },
+    "Export CSV…" : {
+
+    },
+    "Export Diagnostics…" : {
+
+    },
+    "Extension" : {
+
+    },
+    "Extension / Username" : {
+
+    },
+    "Extension not found on server" : {
+
+    },
+    "Extension, number or SIP address" : {
+
+    },
+    "Failed" : {
+
+    },
+    "Favorite" : {
+
+    },
+    "Favorites" : {
+
+    },
+    "Filter" : {
+
+    },
+    "Finish the current call first." : {
+
+    },
+    "General" : {
+
+    },
+    "Hang Up" : {
+
+    },
+    "Hide Keypad" : {
+
+    },
+    "Hide password" : {
+
+    },
+    "Hold" : {
+
+    },
+    "Home" : {
+
+    },
+    "Idle" : {
+
+    },
+    "Import CSV…" : {
+
+    },
+    "Import Finished" : {
+
+    },
+    "Import or Export" : {
+
+    },
+    "Incoming" : {
+
+    },
+    "Incoming call" : {
+
+    },
+    "Incoming call on %@" : {
+
+    },
+    "Incoming calls are refused with SIP 486 Busy Here and logged as missed. This is separate from macOS Focus." : {
+
+    },
+    "Incorrect credentials" : {
+
+    },
+    "Input Level" : {
+
+    },
+    "Internal Extension" : {
+
+    },
+    "Its password is deleted from the Keychain. Call history is kept." : {
+
+    },
+    "Jitter" : {
+
+    },
+    "Keep Offline" : {
+
+    },
+    "Keypad" : {
+
+    },
+    "Label" : {
+
+    },
+    "Launch at Login" : {
+
+    },
+    "Light" : {
+
+    },
+    "Make Default" : {
+
+    },
+    "Mark a contact as a favorite to call it from here." : {
+
+    },
+    "Microphone" : {
+
+    },
+    "Microphone access is off. Turn it on in System Settings › Privacy & Security › Microphone." : {
+
+    },
+    "Missed" : {
+
+    },
+    "Missed call" : {
+
+    },
+    "Mobile" : {
+
+    },
+    "More actions for %@" : {
+
+    },
+    "Mute" : {
+
+    },
+    "Name" : {
+
+    },
+    "New Call" : {
+
+    },
+    "No Accounts" : {
+
+    },
+    "No Contacts" : {
+
+    },
+    "No Favorites" : {
+
+    },
+    "No Recent Calls" : {
+
+    },
+    "No accounts enabled" : {
+
+    },
+    "No response yet" : {
+
+    },
+    "Notes" : {
+
+    },
+    "Number" : {
+
+    },
+    "Number, extension or SIP address" : {
+
+    },
+    "Numbers" : {
+
+    },
+    "OK" : {
+
+    },
+    "Off" : {
+
+    },
+    "Offline" : {
+
+    },
+    "On" : {
+
+    },
+    "On hold" : {
+
+    },
+    "Open Phone" : {
+
+    },
+    "Openline" : {
+
+    },
+    "Openline is free software under the GNU GPL version 3 or later. It uses PJSIP, Opus, libsrtp, WebRTC AEC3 and GRDB; see THIRD_PARTY_LICENSES.md." : {
+
+    },
+    "Openline keeps running when you close its window, so calls still arrive. Quit it to go offline; while it isn't running, you can't receive calls." : {
+
+    },
+    "Optional" : {
+
+    },
+    "Other" : {
+
+    },
+    "Outbound Proxy" : {
+
+    },
+    "Outgoing" : {
+
+    },
+    "Packets" : {
+
+    },
+    "Password" : {
+
+    },
+    "Password unavailable in Keychain" : {
+
+    },
+    "Pound" : {
+
+    },
+    "Preview Ringtone" : {
+
+    },
+    "Pulse" : {
+
+    },
+    "Putting on hold…" : {
+
+    },
+    "Quit Openline" : {
+
+    },
+    "Recent Calls" : {
+
+    },
+    "Recents" : {
+
+    },
+    "Reconnect" : {
+
+    },
+    "Reconnecting…" : {
+
+    },
+    "Redial" : {
+
+    },
+    "Registered" : {
+
+    },
+    "Registering…" : {
+
+    },
+    "Registrar" : {
+
+    },
+    "Registration Interval (seconds)" : {
+
+    },
+    "Registration timed out" : {
+
+    },
+    "Remove Account" : {
+
+    },
+    "Remove from Favorites" : {
+
+    },
+    "Remove number" : {
+
+    },
+    "Remove this account?" : {
+
+    },
+    "Removed account" : {
+
+    },
+    "Remove…" : {
+
+    },
+    "Required" : {
+
+    },
+    "Resume" : {
+
+    },
+    "Resuming…" : {
+
+    },
+    "Rewrite Contact for NAT" : {
+
+    },
+    "Rewrite SDP for NAT" : {
+
+    },
+    "Ringing" : {
+
+    },
+    "Ringing…" : {
+
+    },
+    "Ringtone" : {
+
+    },
+    "Ringtone Volume" : {
+
+    },
+    "SIP Address" : {
+
+    },
+    "SIP Domain" : {
+
+    },
+    "SIP Port" : {
+
+    },
+    "SIP Realm" : {
+
+    },
+    "SIP Server" : {
+
+    },
+    "SRTP keys travel in the signalling, so use TLS to keep them private." : {
+
+    },
+    "STUN Server" : {
+
+    },
+    "Save" : {
+
+    },
+    "Save & Connect" : {
+
+    },
+    "Search" : {
+
+    },
+    "Secure Media (SRTP)" : {
+
+    },
+    "Select a contact" : {
+
+    },
+    "Sent %lld, received %lld, lost %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Sent %1$lld, received %2$lld, lost %3$lld"
+          }
+        }
+      }
+    },
+    "Server error %lld: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Server error %1$lld: %2$@"
+          }
+        }
+      }
+    },
+    "Server name not found" : {
+
+    },
+    "Server unreachable" : {
+
+    },
+    "Settings…" : {
+
+    },
+    "Show Call" : {
+
+    },
+    "Show Menu Bar Icon" : {
+
+    },
+    "Show password" : {
+
+    },
+    "Speaker" : {
+
+    },
+    "Star" : {
+
+    },
+    "Stop Test" : {
+
+    },
+    "System" : {
+
+    },
+    "System Default" : {
+
+    },
+    "TLS certificate error" : {
+
+    },
+    "TURN Password" : {
+
+    },
+    "TURN Server" : {
+
+    },
+    "TURN Username" : {
+
+    },
+    "Takes effect after relaunching. The log contains phone numbers and addresses, stays in memory and has credentials removed." : {
+
+    },
+    "Test Microphone" : {
+
+    },
+    "Test Speaker" : {
+
+    },
+    "The call will be sent to %@." : {
+
+    },
+    "The other party put you on hold" : {
+
+    },
+    "The password for this account is missing." : {
+
+    },
+    "This account has a call in progress. Try again after it ends." : {
+
+    },
+    "This can't be undone." : {
+
+    },
+    "Transfer" : {
+
+    },
+    "Transfer failed: %@" : {
+
+    },
+    "Transfer failed: %lld %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Transfer failed: %1$lld %2$@"
+          }
+        }
+      }
+    },
+    "Transferring to %@…" : {
+
+    },
+    "Transferring…" : {
+
+    },
+    "Transport" : {
+
+    },
+    "Try Again" : {
+
+    },
+    "Unchanged" : {
+
+    },
+    "Unmute" : {
+
+    },
+    "Use ICE" : {
+
+    },
+    "Use IPv6" : {
+
+    },
+    "Use a value between 60 and 86400 seconds." : {
+
+    },
+    "Usernames can't contain spaces or < > \" @ :" : {
+
+    },
+    "Version" : {
+
+    },
+    "Welcome to Openline" : {
+
+    },
+    "Work" : {
+
+    },
+    "Your call will be disconnected. You won't receive calls until you open Openline again." : {
+
+    }
+  },
+  "version" : "1.0"
+}

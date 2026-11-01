@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		137248209D73DFF8981FE599 /* RecentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF25A7CE2A48CC4048947106 /* RecentsView.swift */; };
+		20FA58B9A919C85D330D5C4E /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECA1305026301A8579B25B /* Labels.swift */; };
+		21372D3F4DDAEED5458540E0 /* SystemServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C2ABFABE2C2C923CAE54B /* SystemServices.swift */; };
+		3EF0C6973E17E442339C56F5 /* OpenlineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFA48644E22519FE343B29 /* OpenlineApp.swift */; };
+		3FCB690AF72016D24299AA52 /* OpenlineSIP in Frameworks */ = {isa = PBXBuildFile; productRef = 238B58D6E1C80EB3323130FC /* OpenlineSIP */; };
+		424E63CD186F6AD8E8AD2DD3 /* CallPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34525DA931C1CD6816D1CEEF /* CallPanelController.swift */; };
+		431DF2CE7709A8CEB115765B /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 850B65EB08D20E3DEF2F6B5C /* Localizable.xcstrings */; };
+		5C512897AEAF358BF8CF7946 /* OpenlineStore in Frameworks */ = {isa = PBXBuildFile; productRef = D39182FFD2F385E0142E131F /* OpenlineStore */; };
+		5D385BFB1F36DA8CE8CCC99B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C8515D86EBB03232DA3C60 /* RootView.swift */; };
+		79ED672A1B5D47EAA8286821 /* OpenlineKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15F4E59F296C9230F7217AF4 /* OpenlineKit */; };
+		8D8DD615275ABAF90F2C6B1C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E374A394B708F2755DB7A2 /* AppModel.swift */; };
+		9077C68D72359169E5E66BAA /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6BF9530D1C0B22F6132BA2 /* ContactsView.swift */; };
+		A2D5CF032A2F0BE7C5E9065A /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085C0770FAB4159B5E86493 /* CallView.swift */; };
+		B75193EA6E4A9584976AF144 /* SmokeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673FAF8CD4FD2445B134A782 /* SmokeUITests.swift */; };
+		BEE568B440E6FB88CA49CF1D /* OpenlineCore in Frameworks */ = {isa = PBXBuildFile; productRef = DB056654714EA3B04C5B7ADB /* OpenlineCore */; };
+		CC8AF2900A8DB3370923C03A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12587BB0F3DCC6B27B859F /* SettingsView.swift */; };
+		DA2489A7CCDF39ABEF7C3F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D6A6A957EE316D79F74A49F /* Assets.xcassets */; };
+		DA813A7859F3F536BB6E20E5 /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE179E399A0982FB3AA622 /* KeypadView.swift */; };
+		DE2F73C037673D8ABC752D70 /* AccountForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310A1777119A429BE8A6A1C /* AccountForm.swift */; };
+		E6D21738506114AD03D80F8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F63F48D1720F5176FDCC40 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		185FF4543F4AA6E72FDA53AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4085F1293653FDD860FFEC63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDC17B31BD595B70ACD4447C;
+			remoteInfo = Openline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F6BF9530D1C0B22F6132BA2 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		34525DA931C1CD6816D1CEEF /* CallPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallPanelController.swift; sourceTree = "<group>"; };
+		35F63F48D1720F5176FDCC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4085C0770FAB4159B5E86493 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
+		4FDC74490A41B0BC1F24CC3C /* Openline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Openline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C8515D86EBB03232DA3C60 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		673FAF8CD4FD2445B134A782 /* SmokeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeUITests.swift; sourceTree = "<group>"; };
+		72BE179E399A0982FB3AA622 /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
+		74A5EF52A25FFD113390F167 /* OpenlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6A6A957EE316D79F74A49F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DECA1305026301A8579B25B /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		850B65EB08D20E3DEF2F6B5C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		975EA361DA5EF7DF8CA0320E /* Openline.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Openline.entitlements; sourceTree = "<group>"; };
+		A4E374A394B708F2755DB7A2 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		D310A1777119A429BE8A6A1C /* AccountForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountForm.swift; sourceTree = "<group>"; };
+		DC12587BB0F3DCC6B27B859F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EBAFA48644E22519FE343B29 /* OpenlineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenlineApp.swift; sourceTree = "<group>"; };
+		EF25A7CE2A48CC4048947106 /* RecentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsView.swift; sourceTree = "<group>"; };
+		FA8C2ABFABE2C2C923CAE54B /* SystemServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemServices.swift; sourceTree = "<group>"; };
+		FDEBECBDC68B51B2F9519785 /* SIP */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SIP; path = .; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DFCFBA1A9983D6079F8A590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE568B440E6FB88CA49CF1D /* OpenlineCore in Frameworks */,
+				5C512897AEAF358BF8CF7946 /* OpenlineStore in Frameworks */,
+				3FCB690AF72016D24299AA52 /* OpenlineSIP in Frameworks */,
+				79ED672A1B5D47EAA8286821 /* OpenlineKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B90889E92E713AF852D3C7 /* OpenlineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				673FAF8CD4FD2445B134A782 /* SmokeUITests.swift */,
+			);
+			path = OpenlineUITests;
+			sourceTree = "<group>";
+		};
+		43E799CFAC714687EBB60955 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				35F63F48D1720F5176FDCC40 /* AppDelegate.swift */,
+				A4E374A394B708F2755DB7A2 /* AppModel.swift */,
+				34525DA931C1CD6816D1CEEF /* CallPanelController.swift */,
+				FA8C2ABFABE2C2C923CAE54B /* SystemServices.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		6CE9196129EF658DFA001EB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D310A1777119A429BE8A6A1C /* AccountForm.swift */,
+				4085C0770FAB4159B5E86493 /* CallView.swift */,
+				0F6BF9530D1C0B22F6132BA2 /* ContactsView.swift */,
+				72BE179E399A0982FB3AA622 /* KeypadView.swift */,
+				7DECA1305026301A8579B25B /* Labels.swift */,
+				EF25A7CE2A48CC4048947106 /* RecentsView.swift */,
+				61C8515D86EBB03232DA3C60 /* RootView.swift */,
+				DC12587BB0F3DCC6B27B859F /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD6D3718CD8D2E3E86D3B6FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FDC74490A41B0BC1F24CC3C /* Openline.app */,
+				74A5EF52A25FFD113390F167 /* OpenlineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B032CC3556963818E4FDDF17 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				FDEBECBDC68B51B2F9519785 /* SIP */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		B160F56491F7A90809A54BCF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D6A6A957EE316D79F74A49F /* Assets.xcassets */,
+				850B65EB08D20E3DEF2F6B5C /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B420CEB3CF570BD86111732B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC12ED76E19B7CD55BDD8A /* Openline */,
+				13B90889E92E713AF852D3C7 /* OpenlineUITests */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B8AC12ED76E19B7CD55BDD8A /* Openline */ = {
+			isa = PBXGroup;
+			children = (
+				975EA361DA5EF7DF8CA0320E /* Openline.entitlements */,
+				EBAFA48644E22519FE343B29 /* OpenlineApp.swift */,
+				B160F56491F7A90809A54BCF /* Resources */,
+				43E799CFAC714687EBB60955 /* Support */,
+				6CE9196129EF658DFA001EB7 /* Views */,
+			);
+			path = Openline;
+			sourceTree = "<group>";
+		};
+		CEA087B4F2DD13B6E90A0D5C = {
+			isa = PBXGroup;
+			children = (
+				B420CEB3CF570BD86111732B /* App */,
+				B032CC3556963818E4FDDF17 /* Packages */,
+				AD6D3718CD8D2E3E86D3B6FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		803E19AF3D19CD4C17A872A5 /* OpenlineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 479BD5DC4AC2A676B7CA4EF4 /* Build configuration list for PBXNativeTarget "OpenlineUITests" */;
+			buildPhases = (
+				1071AE418FF367637E040520 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B44F692D2C5A06BF9C11DE14 /* PBXTargetDependency */,
+			);
+			name = OpenlineUITests;
+			packageProductDependencies = (
+			);
+			productName = OpenlineUITests;
+			productReference = 74A5EF52A25FFD113390F167 /* OpenlineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BDC17B31BD595B70ACD4447C /* Openline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10850BEAE0BA4918CA5576F0 /* Build configuration list for PBXNativeTarget "Openline" */;
+			buildPhases = (
+				85CDA315372A696E0296E5CA /* Sources */,
+				404911886AF1F01AF5DBCA01 /* Resources */,
+				4DFCFBA1A9983D6079F8A590 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Openline;
+			packageProductDependencies = (
+				DB056654714EA3B04C5B7ADB /* OpenlineCore */,
+				D39182FFD2F385E0142E131F /* OpenlineStore */,
+				238B58D6E1C80EB3323130FC /* OpenlineSIP */,
+				15F4E59F296C9230F7217AF4 /* OpenlineKit */,
+			);
+			productName = Openline;
+			productReference = 4FDC74490A41B0BC1F24CC3C /* Openline.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4085F1293653FDD860FFEC63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					803E19AF3D19CD4C17A872A5 = {
+						TestTargetID = BDC17B31BD595B70ACD4447C;
+					};
+					BDC17B31BD595B70ACD4447C = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = BB875A041E69DE791F476CBE /* Build configuration list for PBXProject "Openline" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CEA087B4F2DD13B6E90A0D5C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				17D9230B350963BCA0E45DB1 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AD6D3718CD8D2E3E86D3B6FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDC17B31BD595B70ACD4447C /* Openline */,
+				803E19AF3D19CD4C17A872A5 /* OpenlineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		404911886AF1F01AF5DBCA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2489A7CCDF39ABEF7C3F1F /* Assets.xcassets in Resources */,
+				431DF2CE7709A8CEB115765B /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1071AE418FF367637E040520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75193EA6E4A9584976AF144 /* SmokeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85CDA315372A696E0296E5CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE2F73C037673D8ABC752D70 /* AccountForm.swift in Sources */,
+				E6D21738506114AD03D80F8B /* AppDelegate.swift in Sources */,
+				8D8DD615275ABAF90F2C6B1C /* AppModel.swift in Sources */,
+				424E63CD186F6AD8E8AD2DD3 /* CallPanelController.swift in Sources */,
+				A2D5CF032A2F0BE7C5E9065A /* CallView.swift in Sources */,
+				9077C68D72359169E5E66BAA /* ContactsView.swift in Sources */,
+				DA813A7859F3F536BB6E20E5 /* KeypadView.swift in Sources */,
+				20FA58B9A919C85D330D5C4E /* Labels.swift in Sources */,
+				3EF0C6973E17E442339C56F5 /* OpenlineApp.swift in Sources */,
+				137248209D73DFF8981FE599 /* RecentsView.swift in Sources */,
+				5D385BFB1F36DA8CE8CCC99B /* RootView.swift in Sources */,
+				CC8AF2900A8DB3370923C03A /* SettingsView.swift in Sources */,
+				21372D3F4DDAEED5458540E0 /* SystemServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B44F692D2C5A06BF9C11DE14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDC17B31BD595B70ACD4447C /* Openline */;
+			targetProxy = 185FF4543F4AA6E72FDA53AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E48DB39BEE82E4EC614464A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/Openline/Openline.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Openline;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Openline contributors. GPL-3.0-or-later.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Openline uses your microphone to carry your voice during calls. It never records or stores audio.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openline.softphone;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		51FFFD200C3161913FF185A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		6AF5CE20DC29716F2E155DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/Openline/Openline.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Openline;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Openline contributors. GPL-3.0-or-later.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Openline uses your microphone to carry your voice during calls. It never records or stores audio.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openline.softphone;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		951B1AC8841ED9C9689C08FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.openline.OpenlineUITests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = Openline;
+			};
+			name = Release;
+		};
+		A95A6ADF56EC23222B1E100E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.openline.OpenlineUITests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = Openline;
+			};
+			name = Debug;
+		};
+		C106FEB9A4DFCC510EF914CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10850BEAE0BA4918CA5576F0 /* Build configuration list for PBXNativeTarget "Openline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E48DB39BEE82E4EC614464A /* Debug */,
+				6AF5CE20DC29716F2E155DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		479BD5DC4AC2A676B7CA4EF4 /* Build configuration list for PBXNativeTarget "OpenlineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95A6ADF56EC23222B1E100E /* Debug */,
+				951B1AC8841ED9C9689C08FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB875A041E69DE791F476CBE /* Build configuration list for PBXProject "Openline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C106FEB9A4DFCC510EF914CA /* Debug */,
+				51FFFD200C3161913FF185A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		17D9230B350963BCA0E45DB1 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15F4E59F296C9230F7217AF4 /* OpenlineKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenlineKit;
+		};
+		238B58D6E1C80EB3323130FC /* OpenlineSIP */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenlineSIP;
+		};
+		D39182FFD2F385E0142E131F /* OpenlineStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenlineStore;
+		};
+		DB056654714EA3B04C5B7ADB /* OpenlineCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenlineCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4085F1293653FDD860FFEC63 /* Project object */;
+}

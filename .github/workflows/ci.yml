@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  build-and-test:
+    # Requires a runner with Xcode 27 and macOS 27 on Apple Silicon.
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: Vendor
+          key: native-${{ hashFiles('scripts/build-native-deps.sh', 'scripts/config_site.h') }}
+      - run: brew install xcodegen
+      - run: ./scripts/build-native-deps.sh
+      - run: swift test
+      - run: xcodegen generate
+      - run: xcodebuild -project Openline.xcodeproj -scheme Openline -destination 'platform=macOS,arch=arm64' analyze CODE_SIGN_IDENTITY=-

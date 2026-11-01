@@ -148,6 +148,7 @@ public extension Optional<String> {
 
 public enum RegistrationFailure: Equatable, Sendable {
     case incorrectCredentials
+    case credentialUnavailable
     case forbidden
     case notFound
     case timedOut
@@ -160,7 +161,7 @@ public enum RegistrationFailure: Equatable, Sendable {
     /// risks a lockout on the server.
     public var isRetryable: Bool {
         switch self {
-        case .incorrectCredentials, .forbidden, .notFound, .tlsCertificate: false
+        case .incorrectCredentials, .credentialUnavailable, .forbidden, .notFound, .tlsCertificate: false
         case .timedOut, .serverUnreachable, .dnsFailure, .server: true
         }
     }
