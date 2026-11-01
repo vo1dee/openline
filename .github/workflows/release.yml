@@ -15,7 +15,9 @@ jobs:
           key: native-${{ hashFiles('scripts/build-native-deps.sh', 'scripts/config_site.h') }}
       - run: brew install xcodegen
       - name: Check the tag matches project.yml
-        run: grep -q "MARKETING_VERSION: \"${GITHUB_REF_NAME#v}\"" project.yml
+        run: |
+          grep -q "MARKETING_VERSION: \"${GITHUB_REF_NAME#v}\"" project.yml
+      - run: ./scripts/build-native-deps.sh
       - run: swift test
       - run: ./scripts/package.sh
       - name: Publish
