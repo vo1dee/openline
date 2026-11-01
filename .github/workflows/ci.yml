@@ -10,7 +10,7 @@ jobs:
     # macos-latest is still macOS 26; this image has macOS 27 and Xcode 27.
     runs-on: xcode-27
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/cache@v4
         with:
           path: Vendor
