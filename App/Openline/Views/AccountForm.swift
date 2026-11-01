@@ -56,12 +56,7 @@ struct AccountForm: View {
                 Section(isExpanded: $advanced) {
                     advancedFields
                 } header: {
-                    Button {
-                        advanced.toggle()
-                    } label: {
-                        Label("Advanced", systemImage: advanced ? "chevron.down" : "chevron.right")
-                    }
-                    .buttonStyle(.plain)
+                    Text("Advanced")
                 }
             }
             .formStyle(.grouped)
