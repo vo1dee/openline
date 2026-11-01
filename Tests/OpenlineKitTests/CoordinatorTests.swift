@@ -51,6 +51,13 @@ final class FakeSIP: SIPService, @unchecked Sendable {
     func handleNetworkChange() { note("network") }
 }
 
+struct SlowMicrophone: MicrophoneAccess {
+    func ensureAccess() async -> Bool {
+        try? await Task.sleep(for: .milliseconds(20))
+        return true
+    }
+}
+
 @MainActor final class CoordinatorTests: XCTestCase {
     private var sip: FakeSIP!
     private var database: AppDatabase!
@@ -183,6 +190,20 @@ final class FakeSIP: SIPService, @unchecked Sendable {
         incoming()
         await settled(phone.activeCall?.contactName == "Alice")
         XCTAssertTrue(sip.calls.contains("ringing"))
+    }
+
+    func testDoubleAnswerSendsOneAnswer() async throws {
+        let engine = FakeSIP()
+        let slow = PhoneCoordinator(sip: engine, database: try AppDatabase(), credentials: InMemoryCredentialStore(),
+                                    microphone: SlowMicrophone(), endedCallLinger: 0)
+        await slow.start()
+        engine.emit(.incomingCall(handle: "in1", account: account.id, remoteURI: "<sip:555@pbx>", sipCallID: "x"))
+        await settled(slow.activeCall?.state == .incoming)
+        async let first: Void = slow.answer()
+        async let second: Void = slow.answer()
+        try await first
+        try await second
+        XCTAssertEqual(engine.calls.filter { $0 == "answer" }.count, 1)
     }
 
     func testDeclineIsRecorded() async throws {

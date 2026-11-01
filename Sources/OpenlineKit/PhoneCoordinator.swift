@@ -61,6 +61,7 @@ public protocol MicrophoneAccess: Sendable {
 
     private var calls: [String: SIPCall] = [:]
     private var activeHandle: String?
+    private var answeringHandle: String?
     private var earlyEvents: [String: [SIPEvent]] = [:]
     private var attempts: [UUID: Int] = [:]
     private var retries: [UUID: Task<Void, Never>] = [:]
@@ -325,6 +326,11 @@ public protocol MicrophoneAccess: Sendable {
 
     public func answer() async throws {
         guard var call = activeCall, call.state == .incoming, let handle = activeHandle else { return }
+        // The call stays incoming until the engine reports otherwise, so a double
+        // click or the notification action must not answer it a second time.
+        guard answeringHandle != handle else { return }
+        answeringHandle = handle
+        defer { answeringHandle = nil }
         ringer?.stopRinging()
         if let microphone, !(await microphone.ensureAccess()) {
             call.endedLocally = true
@@ -336,7 +342,8 @@ public protocol MicrophoneAccess: Sendable {
     }
 
     public func decline() async throws {
-        guard var call = activeCall, call.state == .incoming, let handle = activeHandle else { return }
+        guard var call = activeCall, call.state == .incoming, let handle = activeHandle,
+              answeringHandle != handle else { return }
         ringer?.stopRinging()
         call.endedLocally = true
         call.apply(.hangupRequested)

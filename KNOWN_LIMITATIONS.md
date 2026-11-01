@@ -5,7 +5,7 @@
 Nothing here should be assumed to work until checked.
 
 - **Real sound hardware, beyond one echo call.** An outgoing call to the PBX echo extension was confirmed by ear on one Mac, including the microphone permission prompt, mute, hold and resume, and switching audio devices during the call. Echo cancellation on open speakers, ringtone output, and the Settings microphone and speaker tests have not been checked.
-- **Answering in the app.** Answer was exercised by the integration agent, not by clicking it in the app.
+- **Hearing an answered call.** One incoming call was answered in the app with its window closed, and microphone audio reached the far end. Hearing the far end on an answered call, the ringtone, and remote hangup still need confirming.
 - **Bluetooth, AirPods, USB switching, and unplugging a device during a call.**
 - **Wi-Fi loss, VPN changes and sleep/wake.** Recovery was tested with a PBX restart only.
 - **DNS SRV, DNS failure, outbound proxies on a live server, STUN, ICE, TURN and IPv6.** Code paths exist; none ran against a server.
