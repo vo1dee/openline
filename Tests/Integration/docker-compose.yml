@@ -1,0 +1,9 @@
+services:
+  asterisk:
+    build: ./asterisk
+    container_name: openline-asterisk
+    ports:
+      - "127.0.0.1:5060:5060/udp"
+      - "127.0.0.1:5060:5060/tcp"
+      - "127.0.0.1:5061:5061/tcp"
+      - "127.0.0.1:10000-10059:10000-10059/udp"

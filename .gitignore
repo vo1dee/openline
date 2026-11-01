@@ -1,0 +1,11 @@
+.DS_Store
+.build/
+.swiftpm/
+DerivedData/
+build/
+Vendor/
+*.xcuserstate
+xcuserdata/
+Local.xcconfig
+Tests/Integration/out/
+__pycache__/
