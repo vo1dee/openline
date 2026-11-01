@@ -201,7 +201,6 @@ class Core {
 
     OLEventHandler emit;
     std::unique_ptr<EndpointImpl> endpoint;
-    std::unique_ptr<LogWriterImpl> logWriter;
     std::map<string, std::unique_ptr<AccountImpl>> accounts;
     std::map<string, std::unique_ptr<CallImpl>> calls;
     std::vector<string> retiring;
@@ -259,8 +258,8 @@ void Core::start(OLEngineConfig *config, int logLevel, OLLogHandler logHandler) 
     cfg.logConfig.level = 0;
     cfg.logConfig.consoleLevel = 0;
     if (logHandler && logLevel > 0) {
-        logWriter = std::make_unique<LogWriterImpl>(logHandler);
-        cfg.logConfig.writer = logWriter.get();
+        // The endpoint owns the writer and deletes it in libDestroy.
+        cfg.logConfig.writer = new LogWriterImpl(logHandler);
         cfg.logConfig.level = (unsigned)logLevel;
         cfg.logConfig.consoleLevel = (unsigned)logLevel;
         cfg.logConfig.msgLogging = logLevel >= 4;
@@ -322,7 +321,6 @@ void Core::shutdown() {
     } catch (const pj::Error &) {
     }
     endpoint.reset();
-    logWriter.reset();
 }
 
 void Core::addAccount(OLAccountSpec *spec, bool registerNow) {

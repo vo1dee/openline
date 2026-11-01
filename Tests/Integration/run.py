@@ -80,9 +80,11 @@ class Agent:
             self.p.stdin.write("quit\n")
             self.p.stdin.flush()
             try:
-                self.p.wait(8)
+                code = self.p.wait(8)
             except subprocess.TimeoutExpired:
                 self.p.kill()
+                code = "timeout"
+            check(f"  agent {self.user} shuts down cleanly", code == 0, str(code))
 
 
 def wait(predicate, timeout=10, step=0.1):
