@@ -1,0 +1,33 @@
+name: Release
+on:
+  push:
+    tags: ['v*.*.*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: xcode-27
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: Vendor
+          key: native-${{ hashFiles('scripts/build-native-deps.sh', 'scripts/config_site.h') }}
+      - run: brew install xcodegen
+      - name: Check the tag matches project.yml
+        run: grep -q "MARKETING_VERSION: \"${GITHUB_REF_NAME#v}\"" project.yml
+      - run: swift test
+      - run: ./scripts/package.sh
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          dmg="Openline-$version.dmg"
+          cd build/release
+          mv Openline.dmg "$dmg"
+          shasum -a 256 "$dmg" > "$dmg.sha256"
+          cd ../..
+          awk -v v="## $version" 'index($0, v) == 1 { on = 1; next } /^## / { on = 0 } on' CHANGELOG.md > notes.md
+          gh release create "$GITHUB_REF_NAME" "build/release/$dmg" "build/release/$dmg.sha256" \
+              --title "Openline $version" --notes-file notes.md --verify-tag

@@ -1,0 +1,35 @@
+name: Bug report
+description: Something doesn't work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Include what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Openline and macOS version
+      placeholder: Openline 1.0.0, macOS 27.2
+    validations:
+      required: true
+  - type: input
+    id: pbx
+    attributes:
+      label: PBX or SIP provider
+      placeholder: Asterisk 20, FreePBX, ...
+  - type: textarea
+    id: logs
+    attributes:
+      label: Diagnostics
+      description: Use the exported diagnostics, and check them for phone numbers and server names you don't want public.
+      render: text

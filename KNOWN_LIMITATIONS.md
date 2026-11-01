@@ -30,6 +30,7 @@ Nothing here should be assumed to work until checked.
 ## Distribution
 
 - Builds are ad-hoc signed and not notarized. No signing certificate was available.
+- A downloaded release has not been tested on a Mac other than the one that built it.
 - An ad-hoc rebuild has a new code signature, so Keychain may ask again for stored passwords.
 
 ## Test rig

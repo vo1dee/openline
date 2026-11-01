@@ -10,4 +10,4 @@
 
 To add a language, add it to `Localizable.xcstrings` in Xcode. No code changes are needed.
 
-Contributions are accepted under GPL-3.0-or-later.
+Contributions are accepted under GPL-3.0-or-later. Participation follows the [Code of Conduct](CODE_OF_CONDUCT.md).

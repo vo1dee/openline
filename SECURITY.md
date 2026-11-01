@@ -1,6 +1,6 @@
 # Security
 
-Report vulnerabilities privately to the maintainers, not in a public issue.
+Report vulnerabilities privately through [GitHub security advisories](https://github.com/vo1dee/openline/security/advisories/new), not in a public issue.
 
 ## Design
 
