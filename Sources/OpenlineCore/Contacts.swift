@@ -154,7 +154,7 @@ public enum ContactCSV {
         if let first = safe.first, "=-@".contains(first), !safe.dropFirst().isEmpty, safe.dropFirst().first?.isNumber == false {
             safe = "'" + safe
         }
-        if safe.contains(where: { ",\"\r\n".contains($0) }) {
+        if safe.contains(where: { $0 == "," || $0 == "\"" || $0.isNewline }) {
             return "\"" + safe.replacingOccurrences(of: "\"", with: "\"\"") + "\""
         }
         return safe

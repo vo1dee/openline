@@ -341,6 +341,8 @@ def main():
 
         # Received audio content: each side heard the other's tone.
         a.quit(); b.quit(); c.quit()
+        unregister = [l for l in open(os.path.join(a.dir, "pjsip.log"), errors="replace") if "Expires: 0" in l or ";expires=0" in l]
+        check("14 quit sends un-REGISTER", bool(unregister), f"{len(unregister)} lines")
         powers_a, secs_a = dominant_tone(os.path.join(OUT, "1001/1001-received.wav"), [440, 880])
         powers_b, secs_b = dominant_tone(os.path.join(OUT, "1002/1002-received.wav"), [440, 880])
         check("6 A's recording contains B's 880 Hz tone", powers_a[880] > 10 * powers_a[440], f"{secs_a:.1f}s voiced")
