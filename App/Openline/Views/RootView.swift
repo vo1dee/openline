@@ -5,6 +5,7 @@ import SwiftUI
 struct RootView: View {
     @Environment(AppModel.self) private var model
     @Environment(\.openWindow) private var openWindow
+    @State private var newAccount: SIPAccount?
 
     var body: some View {
         @Bindable var model = model
@@ -13,13 +14,17 @@ struct RootView: View {
                 ForEach(AppSection.allCases, id: \.self) { section in
                     Label(section.title, systemImage: section.symbol)
                 }
-                if !model.phone.accounts.isEmpty {
-                    Section("Accounts") {
-                        ForEach(model.phone.accounts) { account in
-                            AccountStatusRow(account: account)
-                                .selectionDisabled()
-                        }
+                Section("Accounts") {
+                    ForEach(model.phone.accounts) { account in
+                        AccountStatusRow(account: account)
+                            .selectionDisabled()
                     }
+                    Button { newAccount = SIPAccount() } label: {
+                        Label("Add Account…", systemImage: "plus")
+                    }
+                    .buttonStyle(.borderless)
+                    .selectionDisabled()
+                    .accessibilityIdentifier("main.addAccount")
                 }
             }
             .navigationSplitViewColumnWidth(min: 180, ideal: 200, max: 260)
@@ -35,7 +40,19 @@ struct RootView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
+        .toolbar {
+            ToolbarItem {
+                SettingsLink { Label("Settings", systemImage: "gearshape") }
+                    .help("Settings")
+                    .accessibilityIdentifier("main.settings")
+            }
+        }
         .sheet(isPresented: onboardingVisible) { OnboardingView().environment(model) }
+        .sheet(item: $newAccount) { account in
+            AccountForm(account: account, isNew: true) { newAccount = nil }
+                .environment(model)
+                .frame(width: 460, height: 460)
+        }
         .task { model.reopenMainWindow = { openWindow(id: AppModel.mainWindowID) } }
     }
 
