@@ -17,6 +17,42 @@ final class SmokeUITests: XCTestCase {
         app.terminate()
     }
 
+    private func launchPastOnboarding() -> XCUIApplication {
+        let app = launch()
+        XCTAssertTrue(app.buttons["Configure Later"].waitForExistence(timeout: 20))
+        app.buttons["Configure Later"].click()
+        XCTAssertTrue(app.buttons["Configure Later"].waitForNonExistence(timeout: 5))
+        return app
+    }
+
+    func testSettingsButtonOpensOneWindow() {
+        let app = launchPastOnboarding()
+        let settings = app.descendants(matching: .any)["main.settings"].firstMatch
+        XCTAssertTrue(settings.waitForExistence(timeout: 5), app.debugDescription)
+        settings.click()
+        // The window's title follows the last selected tab.
+        let window = app.windows["com_apple_SwiftUI_Settings_window"]
+        XCTAssertTrue(window.waitForExistence(timeout: 5), app.debugDescription)
+        app.windows["main"].click()
+        XCTAssertEqual(app.windows.firstMatch.identifier, "main")
+        settings.click()
+        Thread.sleep(forTimeInterval: 1)
+        XCTAssertEqual(app.windows.firstMatch.identifier, window.identifier)
+        XCTAssertEqual(app.windows.matching(identifier: window.identifier).count, 1)
+        app.terminate()
+    }
+
+    func testAddAccountButtonWorksWithNoAccounts() {
+        let app = launchPastOnboarding()
+        let add = app.descendants(matching: .any)["main.addAccount"].firstMatch
+        XCTAssertTrue(add.waitForExistence(timeout: 5), app.debugDescription)
+        add.click()
+        XCTAssertTrue(app.textFields["account.server"].waitForExistence(timeout: 5), app.debugDescription)
+        app.buttons["Cancel"].click()
+        XCTAssertTrue(app.textFields["account.server"].waitForNonExistence(timeout: 5))
+        app.terminate()
+    }
+
     /// Needs the Asterisk rig; Tests/Integration/run_app.py places the call.
     func testIncomingCallWithMainWindowClosed() throws {
         let marker = URL(fileURLWithPath: "/tmp/openline-ui-rig")
